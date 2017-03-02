@@ -1,4 +1,4 @@
-package problems;
+package problems.BomberMan;
 
 
 import java.util.Scanner;
