@@ -2,10 +2,7 @@ package ds.linkedlist.app1;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by arun on 12/03/17.
