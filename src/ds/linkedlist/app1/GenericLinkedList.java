@@ -36,6 +36,20 @@ public class GenericLinkedList<E> {
         return false;
     }
 
+    public boolean deleteAt(int index){
+        Node<E> node = head, prev=null;
+
+        for(int i=0; i<=index && node !=null; i++){
+            prev=node;
+            node=node.getNext();
+        }
+
+        prev.setNext(node.getNext());
+        node = null;
+
+        return false;
+    }
+
     public String toString(){
         String string = "[";
 
