@@ -10,6 +10,7 @@ import org.junit.Test;
 
 public class GenericLinkedListTest {
 
+
     static  GenericLinkedList<Integer> gl;
 
     @Before
@@ -53,6 +54,19 @@ public class GenericLinkedListTest {
         gl.insert(3.0f);
         gl.insert(4.0f);
         Assert.assertEquals("[1.0 2.0 3.0 4.0 ]",gl.toString());
+    }
+
+
+    @Test
+    public void deleteAt() throws Exception {
+        gl.insert(2);
+        gl.insert(4);
+
+        gl.delete(4);
+        Assert.assertEquals("[2 ]",gl.toString());
+
+        gl.delete(2);
+        Assert.assertEquals("[]",gl.toString());
     }
 
 }
